@@ -54,3 +54,5 @@ jobs:
 # No secrets, write permissions, PR checkout, artifact upload or release.
 # Status is meaningful only when repository protection requires this trusted
 # workflow's check for the currently reviewed head; configure and verify separately.
+
+# negative acceptance: PR must not be trusted
