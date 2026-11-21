@@ -1,0 +1,32 @@
+{
+  "author_name": "1",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "config.blk",
+      "sha256": "73471b503e3b389687faa4520ec1576dcb326e2d8fd74388af747107d7738d1d",
+      "size": 40
+    },
+    {
+      "path": "data/gui.json",
+      "sha256": "ee70f561963844be41ee9c77c426904d6ea0d6b4cfdc77b514aac9939386e880",
+      "size": 18
+    },
+    {
+      "path": "lang/gui.csv",
+      "sha256": "4d840df8eb59623b7a3eb50852515c6f4bf90ac1eb15721e75ec6b95203368e8",
+      "size": 38
+    }
+  ],
+  "game_version": "1",
+  "github_user": "WTCNUPSubmissions",
+  "id": "SUB-PENDING",
+  "notes": "1",
+  "pr_number": null,
+  "schema_version": 1,
+  "status": "pending",
+  "submitted_at": "2026-11-21T20:24:39Z",
+  "total_size": 96,
+  "translation_version": "1",
+  "work_name": "1"
+}
