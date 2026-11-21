@@ -1,0 +1,32 @@
+{
+  "author_name": "New Build",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "config.blk",
+      "sha256": "62d0da137bd58a346953ae35963b57c6728e0b51f62ff17821785dff8746f435",
+      "size": 19
+    },
+    {
+      "path": "data/newbuild.json",
+      "sha256": "76e63f91236cc3c62a051fbecc5f6771ced4f09e3e139172a776e3fb7efacce5",
+      "size": 18
+    },
+    {
+      "path": "lang/newbuild.csv",
+      "sha256": "2638be67c64e3dddce8249c15f96cdda47ac2a5fa54f3f1b190a4706ed0dde11",
+      "size": 23
+    }
+  ],
+  "game_version": "2.61.0.13",
+  "github_user": "WTCNUPSubmissions",
+  "id": "SUB-PENDING",
+  "notes": "current build recovery verification",
+  "pr_number": null,
+  "schema_version": 1,
+  "status": "pending",
+  "submitted_at": "2026-11-21T22:08:38Z",
+  "total_size": 60,
+  "translation_version": "2.61.0.13_1",
+  "work_name": "New Build Test"
+}
