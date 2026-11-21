@@ -1,0 +1,32 @@
+{
+  "author_name": "Repair Test",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "config.blk",
+      "sha256": "110c83b8777511255e0af1f10ebd0611eb378e4f070f9af96f0d3363cbea18d5",
+      "size": 16
+    },
+    {
+      "path": "data/repair.json",
+      "sha256": "fa31479e6016faf240090e08379346752b9029e5a1447490f93be147265a3ca8",
+      "size": 20
+    },
+    {
+      "path": "lang/repair.csv",
+      "sha256": "fa2452632947674b25cf1ac90313a80ad81a3d7b4a5812b2b17415acceb14cb7",
+      "size": 25
+    }
+  ],
+  "game_version": "2.61.0.14",
+  "github_user": "WTCNUPSubmissions",
+  "id": "SUB-PENDING",
+  "notes": "real repair test",
+  "pr_number": null,
+  "schema_version": 1,
+  "status": "pending",
+  "submitted_at": "2026-11-21T22:15:33Z",
+  "total_size": 61,
+  "translation_version": "2.61.0.14_1",
+  "work_name": "Repair Test"
+}
