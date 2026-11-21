@@ -1,0 +1,47 @@
+{
+  "author_name": "RetryTest",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "config.blk",
+      "sha256": "73471b503e3b389687faa4520ec1576dcb326e2d8fd74388af747107d7738d1d",
+      "size": 40
+    },
+    {
+      "path": "data/icon.png",
+      "sha256": "843ac23b1736b4487ec81cf7c07ddd9bb46ae5b7818c2c3843d99d62fa75f3c9",
+      "size": 9
+    },
+    {
+      "path": "data/info.json",
+      "sha256": "bd2a892c8ba4b422d4658fa2c07aaaa1f43c7ae85a9e4bcd2f4f2162cd4f8c65",
+      "size": 55
+    },
+    {
+      "path": "lang/chinese.csv",
+      "sha256": "c2afcb74be9614b214112f21111a75d24705716f7d86f48000e74065179f456a",
+      "size": 28
+    },
+    {
+      "path": "lang/english.csv",
+      "sha256": "c9972ffc970e476740a9ef8f30bc3b072302985fce3dedacdfeb9a1d6e0d35b5",
+      "size": 27
+    },
+    {
+      "path": "retry.txt",
+      "sha256": "21a59792e2e1f2c37c5398ac7e8bf1795465fb4dfd0a41b6d5470607e7cf7138",
+      "size": 17
+    }
+  ],
+  "game_version": "2.61.0.12",
+  "github_user": "WTCNUPSubmissions",
+  "id": "SUB-PENDING",
+  "notes": "interrupted",
+  "pr_number": null,
+  "schema_version": 1,
+  "status": "pending",
+  "submitted_at": "2026-11-21T20:05:55Z",
+  "total_size": 176,
+  "translation_version": "2.61.0.12_1",
+  "work_name": "RetryTest"
+}
