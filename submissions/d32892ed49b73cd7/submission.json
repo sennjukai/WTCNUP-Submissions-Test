@@ -1,0 +1,32 @@
+{
+  "author_name": "GUI Current",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "config.blk",
+      "sha256": "11867caac403d892a2523b2e219e750c306a6cd6c0fcf8815cf580fe233be4c9",
+      "size": 21
+    },
+    {
+      "path": "data/guicurrent.json",
+      "sha256": "3808e9fe57a48472b2145fcf981268a441bbcfd50e0407c0b7b1ff33a8ecc9f2",
+      "size": 20
+    },
+    {
+      "path": "lang/guicurrent.csv",
+      "sha256": "fabcfbf6a8a12e5aef7f9ee160988abfbcb035823e409f888e649a4f5be1d301",
+      "size": 25
+    }
+  ],
+  "game_version": "2.61.0.15",
+  "github_user": "WTCNUPSubmissions",
+  "id": "SUB-PENDING",
+  "notes": "current build GUI real submission",
+  "pr_number": null,
+  "schema_version": 1,
+  "status": "pending",
+  "submitted_at": "2026-11-21T22:20:36Z",
+  "total_size": 66,
+  "translation_version": "2.61.0.15_1",
+  "work_name": "GUI Current Test"
+}
