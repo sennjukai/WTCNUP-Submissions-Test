@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "submission_uid": "950e8400-e29b-41d4-a716-446655440004",
+  "author_name": "Phase 2 Negative Acceptance",
+  "github_user": "sennjukai",
+  "project_id": null,
+  "project_name": "Negative extension acceptance",
+  "game_version": "2.61.0.12",
+  "translation_version": "2.61.0.12_neg",
+  "channel": "stable",
+  "changelog": "negative extension test",
+  "created_at": "2026-11-22T00:00:00Z",
+  "file_count": 2,
+  "total_size": 14170,
+  "files": [
+    {
+      "path": "localization.blk",
+      "size": 7530,
+      "sha256": "da5f700f6be76189748f66141a22927d355bb1cc04814674dc3cdd13b7b197e6"
+    },
+    {
+      "path": "units.7z",
+      "size": 6640,
+      "sha256": "e6a2ee5fd37e4fa8614f5bc28d59f8fdc6f148dea5729d3d95e81cb964aee821"
+    }
+  ]
+}
