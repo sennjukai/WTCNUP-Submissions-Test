@@ -1,0 +1,664 @@
+#战雷全载具档案详情汉化增强包v0.1;
+#by千树绘;
+#2026-03-11，2026-03-11;
+#v0.1;
+#如有错误和bug请联系 邮箱：mschlagel576@gmail.com bilbil账户：千树绘;
+<ID|readonly|noverify>;<Chinese>
+#苏维埃社会主义联盟/俄罗斯联邦：;
+#防空系统：;
+ussr_zprk_2s6_shop;2S6M\t“通\t古\t斯\t卡-M”
+ussr_zprk_2s6_0;"2S6M/2K22M\t“通\t古\t斯\t卡-M” 
+北约代号：SA-19“灰鼬”
+定型时间：1990 / 服役时间：1990
+SAM-S/SPAAGM
+<color=#CCCCCC>（短程地对空导弹系统/自行式弹炮合一防空系统）"
+ussr_zprk_2s6_1;2S6\t“通\t古\t斯\t卡”
+ussr_zprk_2s6_2;2S6\t“通\t古\t斯\t卡”
+ussr_9a35_m2_shop;9A35M2\t“箭”\t-10M2
+ussr_9a35_m2_0;"9A35M2\t“箭”\t-10M2 
+北约代号：SA-13B“金花鼠”
+定型时间:1979 / 服役时间:1981
+SAM-S
+<color=#CCCCCC>（短程地对空导弹系统）"
+ussr_9a35_m2_1;9A35M2\t“箭”\t-10M2
+ussr_9a35_m2_2;9A35M2\t“箭”\t-10M2
+ussr_9a33bm3_shop;9A33BM3\t“黄\t蜂”\t-AKM
+ussr_9a33bm3_0;"9A33BM3\t“黄\t蜂”\t-AKM 
+定型时间：1979 / 服役时间：1980
+北约代号：SA-8B“壁虎-B” 
+SAM-S
+<color=#CCCCCC>（短程地对空导弹系统）"
+ussr_9a33bm3_1;9A33BM3\t“黄\t蜂”\t-AKM
+ussr_9a33bm3_2;9A33BM3\t“黄\t蜂”\t-AKM
+ussr_tor_m1_shop;9K331\t“道\t尔”\t-M1
+ussr_tor_m1_0;"9K331\t“道\t尔”\t-M1 
+北约代号：SA-15""臂铠""
+定型时间：1989 / 服役时间：1991
+SAM-S
+<color=#CCCCCC>（短程地对空导弹系统）"
+ussr_tor_m1_1;9K331\t“道\t尔”\t-M1
+ussr_tor_m1_2;9K331\t“道\t尔”\t-M1
+ussr_pantsyr_s1_shop;72V6\t“铠\t甲”\t-S1
+ussr_pantsyr_s1_0;"72V6/96K6\t“铠\t甲”\t-S1 
+北约代号：SA-22""灰狗""
+ 定型时间：1994 / 服役时间：2012
+SAM-S/SPAAGM
+<color=#CCCCCC>（短程地对空导弹系统/自行式弹炮合一防空系统）"
+ussr_pantsyr_s1_1;72V6/96K6\t“铠\t甲”\t-S1
+ussr_pantsyr_s1_2;72V6/96K6\t“铠\t甲”\t-S1
+ussr_pantsyr_sm_sv_shop;“铠甲-SM-SV”
+ussr_pantsyr_sm_sv_0;"“铠甲-SM-SV” 
+定型时间：2024 / 服役时间：2025）
+SAM-S/SPAAGM
+<color=#CCCCCC>（短程地对空导弹系统/自行式弹炮合一防空系统）"
+ussr_pantsyr_sm_sv_1;“铠甲-SM-SV”
+ussr_pantsyr_sm_sv_2;“铠甲-SM-SV”
+;
+#IFV / 火力支援战车/反坦克导弹运载车：;
+ussr_bmp_2m_shop;BMP-2M“别列若克”
+ussr_bmp_2m_0;"BMP-2M“别列若克”
+定型时间：2019 / 服役时间：2020）
+ IFV<color=#CCCCCC>（步兵战车）"
+ussr_bmp_2m_1;BMP-2M“别列若克”
+ussr_bmp_2m_2;BMP-2M“别列若克”
+ussr_bmpt_shop;BMPT“终结者”
+ussr_bmpt_0;"BMPT“终结者”
+定型时间：2007 / 服役时间：2018
+TSV<color=#CCCCCC>（坦克支援战车）"
+ussr_bmpt_1;BMPT
+ussr_bmpt_2;BMPT“终结者”
+ussr_bmpt_72_shop;BMPT-72“终结者-2”
+ussr_bmpt_72_0;BMPT-72“终结者-2”
+ussr_bmpt_72_1;BMPT-72
+ussr_bmpt_72_2;BMPT-72
+ussr_2s38_shop;2S38\t“偏\t流-PVO”\t
+ussr_2s38_0;"2S38\t“偏\t流-PVO”\t 
+定型时间：2015 / 服役时间：2023
+SPAAG<color=#CCCCCC>（自行高射炮）"
+ussr_2s38_1;2S38\t“偏\t流-PVO”\t
+ussr_2s38_2;2S38\t“偏\t流-PVO”\t
+ussr_2s25m_shop;2S25M\t“章\t鱼”\t-SDM-1
+ussr_2s25m_0;"2S25M\t“章\t鱼”\t-SDM-1
+定型时间：2022 / 服役时间：2023
+LT-A/SPTAG
+<color=#CCCCCC>(轻型坦克-空降型/自行反坦克炮)"
+ussr_2s25m_1;2S25M\t“章\t鱼”\t-SDM-1
+ussr_2s25m_2;2S25M\t“章\t鱼”\t-SDM-1
+ussr_9p157_shop;9P157-2\t“菊\t花\t-S”
+ussr_9p157_0;"9P157-2\t“菊\t花\t-S”
+北约代号：AT-15“跳跃者”
+定型时间：1996 / 服役时间：2005
+ATGM<color=#CCCCCC>（车载反坦克导弹系统）"
+ussr_9p157_1;9P157-2\t“菊\t花\t-S”
+ussr_9p157_2;9P157-2\t“菊\t花\t-S”
+;
+#主战坦克：;
+ussr_t_72b3_2011_shop;T-72B3M
+ussr_t_72b3_2011_0;"T-72B3M（2016型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_72b3_2011_1;T-72B3
+ussr_t_72b3_2011_2;T-72B3
+ussr_t_72b3_arena_shop;T-72B3“竞技场-E”
+ussr_t_72b3_arena_0;"T-72B3 “竞技场-E ” 
+<color=#CCCCCC>“竞技场-E”主动防御系统展览样车"
+ussr_t_72b3_arena_1;T-72B3“竞技场-E”
+ussr_t_72b3_arena_2;T-72B3“竞技场-E”
+ussr_t_72b3_arena_m_shop;T-72B3A
+ussr_t_72b3_arena_m_0;T-72B3A 【资料状态缺失，待补充】
+ussr_t_72b3_arena_m_1;T-72B3A
+ussr_t_72b3_arena_m_2;T-72B3A
+ussr_t_72b_1989_shop;T-72B
+ussr_t_72b_1989_0;"T-72B（1990型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_72b_1989_1;T-72B
+ussr_t_72b_1989_2;主\t战\t坦\t克
+ussr_t_72b_shop;T-72B
+ussr_t_72b_0;"T-72B （1985型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_72b_1;T-72B
+ussr_t_72b_2;主\t战\t坦\t克
+ussr_t_72m2_moderna_shop;T-72M2“现代化”
+ussr_t_72m2_moderna_0;"T-72M2“现代化”（1994型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_72m2_moderna_1;▂\tT-72M2
+ussr_t_72m2_moderna_2;主\t战\t坦\t克
+ussr_t_90a_shop;T-90A“弗拉基米尔”
+ussr_t_90a_0;"T-90A“弗拉基米尔”（2005型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_90a_1;T-90A
+ussr_t_90a_2;主\t战\t坦\t克
+ussr_t_90m_2020_shop;T-90M“突破-III”
+ussr_t_90m_2020_0;"T-90M“突破-III”（2020型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_90m_2020_1;T-90M
+ussr_t_90m_2020_2;主\t战\t坦\t克
+ussr_t_72av_turms_shop;T-72AV (TURMS-T)
+ussr_t_72av_turms_0;"T-72AV  TURMS-T（2000型）
+坦\t克\t通\t用\t可\t重\t构\t模\t块\t化\t系\t统 T 型
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_72av_turms_1;T-72AV
+ussr_t_72av_turms_2;主\t战\t坦\t克
+ussr_t_72a_shop;T-72A
+ussr_t_72a_0;"T-72A（1979型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_72a_1;T-72A
+ussr_t_72a_2;主\t战\t坦\t克
+ussr_t_80b_shop;T-80B
+ussr_t_80b_0;"T-80BV（1985型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_80b_1;T-80B
+ussr_t_80b_2;主\t战\t坦\t克
+ussr_t_80bvm_shop;T-80BVM
+ussr_t_80bvm_0;"T-80BVM（2018型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_80bvm_1;T-80BVM
+ussr_t_80bvm_2;主\t战\t坦\t克
+ussr_t_80u_race_shop;T-80U
+ussr_t_80u_race_0;"T-80U（1985型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_80u_race_1;T-80U
+ussr_t_80u_race_2;主\t战\t坦\t克
+ussr_t_80ue1_shop;Т-80UЕ-1
+ussr_t_80ue1_0;"Т-80UЕ-1（2005型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_80ue1_1;Т-80UЕ-1
+ussr_t_80ue1_2;主\t战\t坦\t克
+ussr_t_80ue1_sm_shop;◍\tТ-80UЕ-1\t（战\t雷\t少\t女）
+ussr_t_80ue1_sm_0;◍\tТ-80UЕ-1\t（战\t雷\t少\t女\t玛\t丽\t亚\t座\t车）（二次元联动/换皮载具）
+ussr_t_80ue1_sm_1;◍\tТ-80UЕ-1\t（战\t雷\t少\t女）
+ussr_t_80ue1_sm_2;主\t战\t坦\t克
+ussr_t_80ud_shop;T-80UD“白桦”
+ussr_t_80ud_0;"T-80UD“白桦”（1987型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_80ud_1;T-80UD
+ussr_t_80ud_2;主\t战\t坦\t克
+ussr_t_80uk_shop;T-80UK
+ussr_t_80uk_0;"T-80UK（1996型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_80uk_1;T-80UK
+ussr_t_80uk_2;主\t战\t坦\t克
+ussr_t_80um2_shop;T-80UM-2“鸫”
+ussr_t_80um2_0;"T-80UM-2“鸫”
+工程代号：Object 219AS-M
+定型时间：1997 / 未服役
+<color=#CCCCCC>“鸫”主动防御系统技术验证车"
+ussr_t_80um2_1;T-80UM-2“鸫”
+ussr_t_80um2_2;T-80UM-2“鸫”
+ussr_t_80u_shop;T-80U
+ussr_t_80u_0;"T-80U（1985型）
+MBT<color=#CCCCCC>（主战坦克）"
+ussr_t_80u_1;T-80U
+ussr_t_80u_2;主\t战\t坦\t克
+ussr_object_292_shop;292 工\t程
+ussr_object_292_0;"292 工\t程
+工程代号：Object 292
+定型时间：1990 / 未服役
+152MM火炮技术验证车"
+ussr_object_292_1;292 工\t程
+ussr_object_292_2;主\t战\t坦\t克
+;
+#直升机：;
+ka_29_shop;卡\t-29“蜗牛-B”
+ka_29_0;"卡莫夫试验设计局
+库梅尔陶航空生产联合企业 / 俄罗斯直升机
+卡-29
+北约代号：蜗牛-B
+首飞时间：1976年7月28日"
+ka_29_1;卡\t-29
+ka_29_2;卡\t-29
+ka_50_shop;卡\t-50\t“黑\t鲨”
+ka_50_0;"卡莫夫试验设计局
+阿尔谢尼耶夫“进步”航空股份公司
+卡-50
+俄罗斯绰号：黑鲨
+北约代号：噱头-A
+首飞时间：1982年6月17日"
+ka_50_1;卡\t-50
+ka_50_2;卡\t-50
+ka_52_shop;卡\t-52\t“短\t吻\t鳄”
+ka_52_0;"卡莫夫试验设计局 
+阿尔谢尼耶夫“进步”航空股份公司
+卡-52
+俄罗斯绰号：短吻鳄
+北约代号：噱头-B
+首飞时间：1997年7月1日"
+ka_52_1;卡\t-52
+ka_52_2;卡\t-52
+mi_28n_shop;米\t-28N\t“浩劫-B”
+mi_28n_0;"米尔莫斯科直升机厂
+罗斯拉夫直升机厂
+米-28N
+俄罗斯绰号：夜间猎人
+北约代号：浩劫-B
+首飞时间：1996年11月14日"
+mi_28n_1;米\t-28N
+mi_28n_2;米\t-28
+mi_28nm_shop;米\t-28NM\t“浩劫-B”
+mi_28nm_0;米\t里 米\t-28NM\t“浩劫-B/超\t级\t夜\t间\t猎\t人”（D:2019/S:2019）
+mi_28nm_1;米\t-28NM
+mi_28nm_2;米\t-28
+mi_8tv_shop;米\t-8TV“河马-C”
+mi_8tv_0;米\t里 米\t-8TV“河马-C”（D:1974/S:1975）
+mi_8tv_1;米\t-8TV
+mi_8tv_2;米\t-8
+mi_8amtsh_shop;米\t-8AMTSh“河马-H”
+mi_8amtsh_0;米\t里 米\t-8AMTSh“河马-H”（D:2009/S:2011）
+mi_8amtsh_1;米\t-8AMT
+mi_8amtsh_2;米\t-8
+mi_8amtsh_vn_shop;米\t-8AMTSh-VN“河马-H”
+mi_8amtsh_vn_0;米\t里 米\t-8AMTSh-VN“河马-H/游隼-2”（D:2020/S:2021）
+mi_8amtsh_vn_1;米\t-8AMT
+mi_8amtsh_vn_2;米\t-8
+mi_24a_shop;米\t-24A“雌鹿-A”
+mi_24a_0;米\t里 米\t-24A“雌鹿-A”（D:1971/S:1972）
+mi_24a_1;米\t-24A
+mi_24a_2;米\t-24
+mi_24p_shop;米\t-24P“雌鹿-F”
+mi_24p_0;米\t里 米\t-24P“雌鹿-F”（D:1981/S:1982）
+mi_24p_1;米\t-24P
+mi_24p_2;米\t-24
+mi_35m_shop;米\t-35M“超级雌鹿”
+mi_35m_0;米\t里 米\t-35M“超级雌鹿”（D:2004/S:2005）
+mi_35m_1;米\t-35M
+mi_35m_2;米\t-35
+mi_35p_shop;米\t-35P“雌鹿-F”
+mi_35p_0;米\t里 米\t-35P“雌鹿-F/凤凰”（D:1989/S:1990s）
+mi_35p_1;米\t-35P
+mi_35p_2;米\t-35
+mi_24v_shop;米\t-24V“雌鹿-D”
+mi_24v_0;米\t里 米\t-24V“雌鹿-D”（D:1976/S:1979）
+mi_24v_1;米\t-24V
+mi_24v_2;米\t-24
+mi_4av_shop;米\t-4AV“猎犬”
+mi_4av_0;米\t里 米\t-4AV“猎犬”（D:1952/S:1953）
+mi_4av_1;米\t-4AV
+mi_4av_2;米\t-4
+;
+#喷气战斗机：;
+mig-21_smt_shop;米\t格\t-21SMT“鱼窝-K”
+mig-21_smt_0;米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-21SMT“鱼窝-K”（1971）
+mig-21_smt_1;米\t格\t-21SMT
+mig-21_smt_2;米\t格\t-21
+mig-21_s_shop;米\t格\t-21S R-13-300
+mig-21_s_0;米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-21S R-13-300
+mig-21_s_1;米\t格\t-21S
+mig-21_s_2;米\t格\t-21
+mig-21_bis_shop;米\t格\t-21bis“鱼窝-N”
+mig-21_bis_0;米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-21bis“鱼窝-N”（1976）
+mig-21_bis_1;米\t格\t-21bis
+mig-21_bis_2;米\t格\t-21
+mig_23m_shop;米\t格\t-23M“鞭挞者-E”
+mig_23m_0;米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-23M“鞭挞者-E”（1972）
+mig_23m_1;米\t格\t-23M
+mig_23m_2;米\t格\t-23
+mig_23mld_shop;米\t格\t-23MLD“鞭挞者-K”
+mig_23mld_0;米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-23MLD“鞭挞者-K”（1982）
+mig_23mld_1;米\t格\t-23MLD
+mig_23mld_2;米\t格\t-23
+mig_23ml_shop;米\t格\t-23ML“鞭挞者-G”
+mig_23ml_0;米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-23ML“鞭挞者-G”（1978）
+mig_23ml_1;米\t格\t-23ML
+mig_23ml_2;米\t格\t-23
+mig_25pd_shop;米\t格\t-25PD“狐蝠-E”
+mig_25pd_0;米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-25PD“狐蝠-E”（1979）
+mig_25pd_1;米\t格\t-25PD
+mig_25pd_2;米\t格\t-25
+mig_29_9_13_shop;米\t格\t-29“支点-C”
+mig_29_9_13_0;米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-29“支点-C”(Lot No.9.13 / 1986)
+mig_29_9_13_1;米\t格\t-29
+mig_29_9_13_2;米\t格\t-29
+mig_29smt_9_19_shop;米\t格\t-29SMT“支点-E”
+mig_29smt_9_19_0;米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-29SMT“支点-E”(Lot No.9.19R / 2009)
+mig_29smt_9_19_1;米\t格\t-29SMT
+mig_29smt_9_19_2;米\t格\t-29
+mig_29n_shop;\t米\t格\t-29N “支点”
+mig_29n_0;\t米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-29N “支点”(Lot No.9.12SD/1995)
+mig_29n_1;▅\t米\t格\t-29N
+mig_29n_2;▅\t米\t格\t-29
+su_27_shop;苏\t-27S“侧卫-B”
+su_27_0;苏\t霍\t伊 苏\t-27S“侧卫-B”（1985）
+su_27_1;苏\t-27S
+su_27_2;苏\t-27
+su_27sm_shop;苏\t-27SM“侧卫-B”
+su_27sm_0;苏\t霍\t伊 苏\t-27SM3“侧卫-B”（2011）
+su_27sm_1;苏\t-27SM3
+su_27sm_2;苏\t-27
+su_30sm_shop;苏\t-30SM“侧卫-H”
+su_30sm_0;苏\t霍\t伊 伊\t尔\t库\t茨\t克\t 苏\t-30SM“侧卫-H”（2012）
+su_30sm_1;苏\t-30SM
+su_30sm_2;苏\t-30
+su_30mk2v_venezuela_shop;▂\t苏\t-30MK2V“侧卫-G”
+su_30mk2v_venezuela_0;"苏霍伊设计局
+阿穆尔河畔共青城加加林飞机制造厂/苏霍伊集团/联合航空制造公司 
+苏-30MK2V
+北约代号：侧卫-G
+服役时间：2006
+MRF<color=#CCCCCC>（多用途战斗机）
+礼包归属国：委内瑞拉"
+su_30mk2v_venezuela_1;▂\t苏\t-30MK2V
+su_30mk2v_venezuela_2;▂\t苏\t-30
+su_30sm2_shop;苏\t-30SM2“侧卫-H”
+su_30sm2_0;"苏\t霍\t伊设计局
+伊尔库茨克航空工厂/伊尔库特科学生产集团/联合航空制造公司
+苏-30SM2
+北约代号：侧卫-H
+服役时间：2022
+MRF<color=#CCCCCC>（多用途战斗机）"
+su_30sm2_1;苏\t-30SM2
+su_30sm2_2;苏\t-30
+mig_29_9_12_shop;米\t格\t-29“支点-A”
+mig_29_9_12_0;米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-29“支点-A”（Lot No.9.12/1983）
+mig_29_9_12_1;米格-29（9.12）
+mig_29_9_12_2;米格-29
+mig_29m_9_15_shop;米\t格\t-29M“支点-E”
+mig_29m_9_15_0;米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-29M“支点-E”（Lot No.9.15/R&D1986-1991）
+mig_29m_9_15_1;米格-29M
+;米格-29
+#舰载机：;
+su_33_shop;苏\t-33“侧卫-D”
+su_33_0;苏\t霍\t伊 苏\t-33“侧卫-D”（1998）
+su_33_1;苏\t-33
+su_33_2;苏\t-33
+yak_141_shop;雅\t克\t-141“自由式”
+yak_141_0;雅\t科\t夫\t列\t夫 雅\t克\t-141“自由式”（未服役 R&D:1987-1995）
+yak_141_1;雅\t克\t-141
+yak_141_2;雅\t克\t-141
+;
+#攻击机/战斗轰炸机：;
+mig_27m_shop;米\t格\t-27M“鞭笞者-J”
+mig_27m_0;米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-27M“鞭笞者-J”（1979）
+mig_27m_1;米\t格\t-27M
+mig_27m_2;米\t格\t-27
+mig_27k_shop;米\t格\t-27K“鞭笞者-J2”
+mig_27k_0;米\t高\t扬\t-\t古\t列\t维\t奇 米\t格\t-27K“鞭笞者-J2”（1980）
+mig_27k_1;米\t格\t-27K
+mig_27k_2;米\t格\t-27
+su_24m_shop;苏\t-24M“击剑手-M”
+su_24m_0;苏\t霍\t伊 苏\t-24M“击剑手-M”（M:1983/M2:2007）
+su_24m_1;苏\t-24M
+su_24m_2;苏\t-24
+su_25t_shop;苏\t-25T“蛙足-K”
+su_25t_0;苏\t霍\t伊 苏\t-25T“蛙足-K”（1994）
+su_25t_1;苏\t-25T
+su_25t_2;苏\t-25
+su_25tm_shop;苏\t-39“蛙足-K”
+su_25tm_0;苏\t霍\t伊 苏\t-39“蛙足-K”（苏\t-25TM出\t口\t型  试用:1996/定型:1997）
+su_25tm_1;苏\t-39
+su_25tm_2;苏\t-39
+su_25_558arz_shop;▂\t苏\t-25BM “蛙足-A”(558 ARZ)
+su_25_558arz_0;▂\t苏\t霍\t伊 苏\t-25BM\t“蛙足-A”（558 航\t空\t修\t理\t厂\t升\t级\t型）
+su_25_558arz_1;▂\t苏\t-25BM
+su_25_558arz_2;▂\t苏\t-25
+su_25sm3_shop;苏\t-25SM3“蛙足-A”
+su_25sm3_0;苏\t霍\t伊 苏\t-25SM3“蛙足-A”（2018）
+su_25sm3_1;苏\t-25SM3
+su_25sm3_2;苏\t-25
+su_17m2_shop;苏\t-17M2“装配匠-D”
+su_17m2_0;苏\t霍\t伊 苏\t-17M2“装配匠-D”（1975）
+su_17m2_1;苏\t-17M2
+su_17m2_2;苏\t-17
+su_17m4_shop;苏\t-17M4“装配匠-H”
+su_17m4_0;苏\t霍\t伊 苏\t-17M4“装配匠-H”（1984）
+su_17m4_1;苏\t-17M4
+su_17m4_2;苏\t-17
+su_22m3_shop;苏\t-22M3“装配匠-J”
+su_22m3_0;苏\t霍\t伊 苏\t-22M3“装配匠-J”（叙利亚出口型 1982）
+su_22m3_1;苏\t-22M
+su_22m3_2;苏\t-22
+yak_130_early_shop;雅克-130“海燕”
+yak_130_early_0;雅科夫列夫  雅克-130“海燕”
+yak_130_early_1;雅克-130“海燕”
+yak_130_early_2;雅克-130“海燕”
+;
+;
+;
+;
+#日本/泰国/马来西亚/印度尼西亚：;
+#主战坦克：;
+jp_type_74_mod_g_kai_shop;74 式\t战\t车 G 型
+jp_type_74_mod_g_kai_0;74 式\t战\t车\t改 G 型（D:1990/S:1991）
+jp_type_74_mod_g_kai_1;74 式\t战\t车 G 型
+jp_type_74_mod_g_kai_2;主\t战\t坦\t克
+jp_oplot_t_shop;T-84“堡垒-M”
+jp_oplot_t_0;T-84“堡垒-M” （D:2011/S:2018）
+jp_oplot_t_1;▅\tBM\t”堡\t垒”\t-T
+jp_oplot_t_2;主\t战\t坦\t克
+jp_type_10_prototype_shop;TK-X\t（P）
+jp_type_10_prototype_0;TK-X\t（P） 99-023X（D:2004/S:未服役）
+jp_type_10_prototype_1;TKX
+jp_type_10_prototype_2;主\t战\t坦\t克
+jp_tkx_prot_shop;TK-X
+jp_tkx_prot_0;TK-X\t 三\t号\t原\t型\t车 99-023X（D:2006/S:未服役）
+jp_tkx_prot_1;TKX
+jp_tkx_prot_2;主\t战\t坦\t克
+jp_type_10_shop;10 式\t战\t车
+jp_type_10_0;10 式\t战\t车（D:2010/S:2012）
+jp_type_10_1;10 式\t战\t车
+jp_type_10_2;主\t战\t坦\t克
+jp_type_90b_camo_shop;90 式\t战\t车 B 型\t（富\t士\t教\t导\t团）
+jp_type_90b_camo_0;90 式\t战\t车 B 型（富士教导团第三中队）（D:1990/S:1992）
+jp_type_90b_camo_1;90 式\t战\t车 B 型
+jp_type_90b_camo_2;主\t战\t坦\t克
+jp_type_90b_shop;90 式\t战\t车 B 型
+jp_type_90b_0;90 式\t战\t车 B 型（D:1990/S:1992）
+jp_type_90b_1;90 式\t战\t车 B 型
+jp_type_90b_2;主\t战\t坦\t克
+jp_type_90_shop;90 式\t战\t车
+jp_type_90_0;90 式\t战\t车 （D:1990/S:1992）
+jp_type_90_1;90 式\t战\t车
+jp_type_90_2;主\t战\t坦\t克
+jp_type_74_shop;74 式\t战\t车 E 型
+jp_type_74_0;74 式\t战\t车 E 型（D:1985/S:1786）
+jp_type_74_1;74 式\t战\t车 E 型
+jp_type_74_2;主\t战\t坦\t克
+;
+#轮式突击车 / IFV / ;
+jp_type_87_rcv_prot_shop;RCV
+jp_type_87_rcv_prot_0;侦\t察\t警\t戒\t车\t（试\t作\t一\t号\t车）
+jp_type_87_rcv_prot_1;RCV
+jp_type_87_rcv_prot_2;轻\t型\t坦\t克
+jp_type_87_rcv_shop;87 式\t侦\t察\t警\t戒\t车
+jp_type_87_rcv_0;87 式\t侦\t察\t警\t戒\t车（D:1987/S:1987）RCV
+jp_type_87_rcv_1;87 式\t侦\t察\t警\t戒\t车
+jp_type_87_rcv_2;轻\t型\t坦\t克
+jp_icv_ifv_prototype_shop;CTWV ICV（P）
+jp_icv_ifv_prototype_0;CTWV ICV/试作步兵战斗车（服役状态未知 R&D:2020-2024）IFV\n（Prototype）
+jp_icv_ifv_prototype_1;CTWV (ICV)
+jp_icv_ifv_prototype_2;轻\t型\t坦\t克
+jp_icv_prototype_shop;24式侦察战斗车
+jp_icv_prototype_0;24式侦察战斗车（D:2020/S:2024）
+jp_icv_prototype_1;24式侦察战斗车
+jp_icv_prototype_2;轻\t型\t坦\t克
+jp_type_16_mod_shop;16 式\t机\t动\t战\t斗\t车\t（初期型）
+jp_type_16_mod_0;16 式\t机\t动\t战\t斗\t车\t（初期型）（D:2016/S:2016） 
+jp_type_16_mod_1;16 式\t机\t动\t战\t斗\t车
+jp_type_16_mod_2;轻\t型\t坦\t克
+jp_type_16_mcv_prot_shop;16式机动战斗车（P）
+jp_type_16_mcv_prot_0;1\t6\t式\t机\t动\t战\t斗\t车\t 试\t作\t三\t号\t车 99-0292（D:2015/S:未服役）
+jp_type_16_mcv_prot_1;16式机动战斗车（P）
+jp_type_16_mcv_prot_2;轻\t型\t坦\t克
+jp_type_16_shop;16 式\t机\t动\t战\t斗\t车
+jp_type_16_0;16 式\t机\t动\t战\t斗\t车 （D:2016/S:2017）
+jp_type_16_1;16 式\t机\t动\t战\t斗\t车
+jp_type_16_2;轻\t型\t坦\t克
+jp_type_89_shop;89 式\t装\t甲\t战\t斗\t车
+jp_type_89_0;89 式\t装\t甲\t战\t斗\t车（D:1989/S:1989）IFV
+jp_type_89_1;89 式\t装\t甲\t战\t斗\t车
+jp_type_89_2;轻\t型\t坦\t克
+;
+#直升机：;
+ah_64d_japan_shop;AH-64DJP\t“长\t弓\t阿\t帕\t奇”
+ah_64d_japan_0;富\t士\t重\t工 AH-64DJP\t“长\t弓\t阿\t帕\t奇”(2006）
+ah_64d_japan_1;▅\tAH-64D
+ah_64d_japan_2;▅\tAH-64
+ah_64d_lightweight_japan_shop;AH-64DJP（AT）“阿帕奇”
+ah_64d_lightweight_japan_0;富士重工 AH-64DJP（全地形改装型）“阿帕奇”
+ah_64d_lightweight_japan_1;AH-64DJP（AT）“阿帕奇”
+ah_64d_lightweight_japan_2;AH-64D
+uh_1b_japan_shop;UH-1B\t“鹎”
+uh_1b_japan_0;富\t士\t重\t工 UH-1B\t“鹎”（1962）
+uh_1b_japan_1;▅\tUH-1B
+uh_1b_japan_2;▅\tUH-1
+ah_1s_shop;AH-1S\t“现\t代\t化\t眼\t镜\t蛇”\t（“木\t更\t津\t若\t菜”\t涂\t装）
+ah_1s_0;富\t士\t重\t工 AH-1S\t“现\t代\t化\t眼\t镜\t蛇”\t（第 4 对\t战\t车\t直\t升\t机\t队\t“木\t更\t津\t若\t菜”\t涂\t装）（1990）
+ah_1s_1;▅\tAH-1S
+ah_1s_2;▅\tAH-1
+ah_1s_early_shop;AH-1S ECAS \t“眼\t镜\t蛇”
+ah_1s_early_0;富\t士\t重\t工 AH-1S\t（增\t强\t眼\t镜\t蛇\t武\t器\t系\t统）\t“眼\t镜\t蛇”（1990）
+ah_1s_early_1;▅\tAH-1S
+ah_1s_early_2;▅\tAH-1
+ah_1s_late_shop;AH-1S\t“现\t代\t化\t眼\t镜\t蛇”
+ah_1s_late_0;富\t士\t重\t工 AH-1S\t“现\t代\t化\t眼\t镜\t蛇”（1984）
+ah_1s_late_1;▅\tAH-1S
+ah_1s_late_2;▅\tAH-1
+ah_64e_indonesia_shop;◥\tAH-64E\t“阿\t帕\t奇\t卫\t士”
+ah_64e_indonesia_0;◥\t波\t音 AH-64E\t“阿\t帕\t奇\t卫\t士”
+ah_64e_indonesia_1;◥\tAH-64E
+ah_64e_indonesia_2;◥\tAH-64
+mi_35p_indonesia_shop;◥\t米\t-35P-1M
+mi_35p_indonesia_0;◥\t米\t里 米\t-35P-1M
+mi_35p_indonesia_1;◥\t米\t-35P
+mi_35p_indonesia_2;◥\t米\t-35
+;
+#防空系统：;
+jp_type_81_tansam_shop;81 式\t SAM-S 改
+jp_type_81_tansam_0;"81 式\t短\t距\t离\t地\t对\t空\t诱\t导\t弹 (C)/SKW-464（73 式\t卡\t车\t）
+定型时间：1989 / 服役时间：1995
+SAM-S
+<color=#CCCCCC>（短程地对空导弹系统）"
+jp_type_81_tansam_1;81 式\t短 SAM 改
+jp_type_81_tansam_2;自\t行\t防\t空\t炮
+jp_type_81_tansam_fcs_shop;81 式\t短 SAM 改\t（目\t标\t捕\t获\t与\t指\t示\t系\t统\t）
+jp_type_81_tansam_fcs_0;"81 式\t短\t距\t离\t地\t对\t空\t诱\t导\t弹 (C)/SKW-464（73 式\t卡\t车\t）
+ 定型时间：1989 / 服役时间：1995
+FCR/SAM-R
+<color=#CCCCCC>（火控雷达/地对空导弹系统雷达）"
+jp_type_81_tansam_fcs_1;81 式\t短 SAM 改
+jp_type_81_tansam_fcs_2;目\t标\t捕\t获\t指\t示\t车
+jp_type_81_tansam_launcher_shop;81 式\t短 SAM 改\t（发\t射\t系\t统）
+jp_type_81_tansam_launcher_0;"81 式\t短\t距\t离\t地\t对\t空\t诱\t导\t弹 (C)/SKW-464（73 式\t卡\t车\t） 
+ 定型时间：1989 / 服役时间：1995
+TEL/SAM-S
+<color=#CCCCCC>（运输-起竖-发射车/短程地对空导弹系统）"
+jp_type_81_tansam_launcher_1;81 式\t短 SAM 改
+jp_type_81_tansam_launcher_2;起\t竖\t式\t防\t空\t导\t弹
+jp_type_03_chusam_launcher_shop;03 式\t中 SAM\t（发\t射\t装\t置）
+jp_type_03_chusam_launcher_0;"03 式\t中\t距\t离\t地\t对\t空\t诱\t导\t弹\t/重\t型\t轮\t回\t收\t车\t
+定型时间：2003 / 服役时间：2005
+TEL/SAM-M
+<color=#CCCCCC>（运输-起竖-发射车/中程地对空导弹系统）"
+jp_type_03_chusam_launcher_1;03 式\t中 SAM
+jp_type_03_chusam_launcher_2;起\t竖\t式\t防\t空\t导\t弹
+jp_type_03_chusam_fcs_shop;03 式\t中 SAM\t（雷\t达\t装\t置\t空\t中\t线\t部）
+jp_type_03_chusam_fcs_0;"\t03 式\t中\t距\t离\t地\t对\t空\t诱\t导\t弹\t/重\t型\t轮\t回\t收\t车
+定型时间：2003 / 服役时间：2005
+FCR/SAM-R
+<color=#CCCCCC>（火控雷达/地对空导弹系统雷达）"
+jp_type_03_chusam_fcs_1;03 式\t中 SAM
+jp_type_03_chusam_fcs_2;目\t标\t捕\t获\t指\t示\t车
+jp_type_93_shop;93 式\t SAM-S
+jp_type_93_0;93 式\t近\t距\t离\t地\t对\t空\t诱\t导\t弹/BXD10（高机动车） （D:1993/S:1993）SAM-S
+jp_type_93_1;93 式\t SAM-S
+jp_type_93_2;自\t行\t防\t空\t炮
+jp_type_87_shop;87 式\t自\t走\t高\t射\t机\t关\t炮
+jp_type_87_0;87 式\t自\t走\t高\t射\t机\t关\t炮（D:1987/S:1987）SPAAG
+jp_type_87_1;87 式\t自\t走\t高\t射\t机\t关\t炮
+jp_type_87_2;自\t行\t防\t空\t炮
+;
+#喷气战斗机：;
+f-4ej_adtw_shop;F-4EJ\t“鬼\t怪”\tII\t（开\t发\t实\t验\t团）
+f-4ej_adtw_0;三\t菱\t重\t工\nF-4EJ\t“鬼\t怪”\tII\t（飞\t行\t开\t发\t实\t验\t团/SCV:1971-2021）\n60周年纪念涂装机/47-8336
+f-4ej_adtw_1;▅\tF-4EJ\t（开\t发\t实\t验\t团）
+f-4ej_adtw_2;▅\tF-4EJ
+f_16aj_shop;F-16AJ\t“战\t隼”
+f_16aj_0;通\t用\t动\t力 F-16AJ \t“战\t隼”
+f_16aj_1;▅\tF-16AJ
+f_16aj_2;▅\tF-16A
+f_2a_shop;F-2A“平成零战”
+f_2a_0;三\t菱\t重\t工 F-2A“平成零战”（2000）
+f_2a_1;F-2A
+f_2a_2;F-2A
+f_2a_adtw_shop;F-2A ADTW “平成零战”
+f_2a_adtw_0;三\t菱 F-2A“平成零战”（飞\t行\t开\t发\t实\t验\t团）
+f_2a_adtw_1;F-2A ADTW
+f_2a_adtw_2;F-2A ADTW
+f-5e_fcu_thailand_shop;F-5E FCU “虎”
+f-5e_fcu_thailand_0;诺\t斯\t罗\t普 F-5E FCU/B.Kh.18Kh “虎”(2002)
+f-5e_fcu_thailand_1;▅\tF-5E
+f-5e_fcu_thailand_2;▅\tF-5
+f-5t_thailand_shop;F-5T SCU“虎”
+f-5t_thailand_0;诺\t斯\t罗\t普 F-5T SCU/B.Kh.18Kh “超级虎” (2002)
+f-5t_thailand_1;F-5T SCU
+f-5t_thailand_2;F-5
+f-5th_thailand_shop;F-5TH TCU“超级虎”
+f-5th_thailand_0;\t诺\t斯\t罗\t普 F-5TH TCU/B.Kh.18Kh “超级虎”(2019)
+f-5th_thailand_1;▅ F-5TH TCU
+f-5th_thailand_2;▅ F-5
+f_16a_block_15_ocu_thailand_shop;F-16A“战隼”
+f_16a_block_15_ocu_thailand_0;\t通\t用\t动\t力 F-16A/B.Kh.19“战隼”（1988）
+f_16a_block_15_ocu_thailand_1;▅\tF-16A
+f_16a_block_15_ocu_thailand_2;▅\tF-16A
+saab_jas39c_thailand_shop;JAC 39C“鹰狮”
+saab_jas39c_thailand_0;萨\t博 JAC 39C/B.Kh.20“鹰狮”（2011）
+saab_jas39c_thailand_1;▅\tJAS 39C
+saab_jas39c_thailand_2;▅\tJAS 39
+f-4ej_shop;F-4EJ\t“鬼\t怪”\tII
+f-4ej_0;三\t菱\t重\t工 F-4EJ\t“鬼\t怪”\tII（1972）
+f-4ej_1;▅\tF-4EJ
+f-4ej_2;▅\tF-4EJ
+f-4ej_adtw_shop;F-4EJ\t“鬼\t怪”\tII\t（开\t发\t实\t验\t团）
+f-4ej_adtw_0;三\t菱\t重\t工\nF-4EJ\t“鬼\t怪”\tII\t（飞\t行\t开\t发\t实\t验\t团/SCV:1971-2021）\n60周年纪念涂装机/47-8336
+f-4ej_adtw_1;▅\tF-4EJ\t（开\t发\t实\t验\t团）
+f-4ej_adtw_2;▅\tF-4EJ
+f-4ej_kai_shop;F-4EJ\t（改）\t“鬼\t怪”\tII
+f-4ej_kai_0;三\t菱\t重\t工 F-4EJ\t（改）\t“鬼\t怪”\tII（1990）
+f-4ej_kai_1;▅\tF-4EJ
+f-4ej_kai_2;▅\tF-4EJ
+;
+#舰载机：;
+av_8s_thailand_shop;AV-8S“斗牛士” 早\t期\t型
+av_8s_thailand_0;霍\t克\t-\t西\t德\t利 AV-8S“斗牛士” 早\t期\t型（1997）
+av_8s_thailand_1;▅\tB.KhL.1
+av_8s_thailand_2;▅\tAV-8
+av_8s_late_thailand_shop;AV-8S“斗牛士”
+av_8s_late_thailand_0;霍\t克\t-\t西\t德\t利 AV-8S“斗牛士” （1997）
+av_8s_late_thailand_1;▅\tB.KhL.1
+av_8s_late_thailand_2;▅\tAV-8
+a_7e_thailand_shop;A-7E“海盗II”
+a_7e_thailand_0;沃\t特 A-7E/B.HT.1“海盗II”（1995）
+a_7e_thailand_1;▅\tA-7E
+a_7e_thailand_2;▅\tA-7
+fa_18d_late_malaysia_shop;F/A-18D\t“大\t黄\t蜂”
+fa_18d_late_malaysia_0;麦\t克\t唐\t纳\t-\t道\t格\t拉\t斯 F/A-18D\t“大\t黄\t蜂”（1997）
+fa_18d_late_malaysia_1;▅\tF/A-18D
+fa_18d_late_malaysia_2;▅\tF/A-18D
+;
+#攻击机/战斗轰炸机/教练机：;
+hawk_200_rda_2;“鹰”
+hawk_209_indonesia_shop;“鹰”\t209
+hawk_209_indonesia_0;英\t国\t宇\t航 \t“鹰”\t209（1996）
+hawk_209_indonesia_1;◥\t“鹰”\t209
+hawk_209_indonesia_2;◥\t“鹰”
+alpha_jet_a_thailand_shop;阿尔法喷气A“猎手”
+alpha_jet_a_thailand_0;达索×道尼尔 阿尔法喷气A/B.J.7 “猎手”（2000）
+alpha_jet_a_thailand_1;▅\t“阿\t尔\t法\t喷\t气”
+alpha_jet_a_thailand_2;▅\t“阿\t尔\t法\t喷\t气”
+alpha_jet_th_phase_1_shop;阿尔法喷气TH“猎手”
+alpha_jet_th_phase_1_0;达索×道尼尔 阿尔法喷气TH/B.J.7 “猎手”（现代化升级）（2021）
+alpha_jet_th_phase_1_1;▅\tB.J.7
+alpha_jet_th_phase_1_2;▅\t“阿\t尔\t法\t喷\t气”
+f-5a_thailand_shop;F-5A“自由战士”
+f-5a_thailand_0;诺\t斯\t罗\t普 F-5A/B.Kh.18“自由战士”（1967）
+f-5a_thailand_1;▅\tF-5A
+f-5a_thailand_2;▅\tF-5
+su_30mkm_shop;苏\t-30MKM
+su_30mkm_0;苏\t霍\t伊 伊\t尔\t库\t茨\t克\t 苏\t-30MKM（2007）
+su_30mkm_1;▅\t苏\t-30MKM
+su_30mkm_2;▅\t苏\t-30
+;
+;
+;
+it_kf_41_shop;KF41“猞猁 / 凯尔希”
+it_kf_41_0;KF41“猞猁 / 凯尔希”
+it_kf_41_1;KF41“猞猁 / 凯尔希”
+it_kf_41_2;KF41“猞猁 / 凯尔希”
