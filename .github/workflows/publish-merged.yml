@@ -16,6 +16,24 @@ jobs:
     runs-on: windows-latest
     timeout-minutes: 10
     steps:
+      - name: Require approval on the reviewed head SHA
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          $headers = @{ Authorization = "Bearer $env:GH_TOKEN"; Accept = 'application/vnd.github+json'; 'User-Agent' = 'WTCNUP-Approval-Binding' }
+          $reviews = Invoke-RestMethod "https://api.github.com/repos/$env:REPO/pulls/$env:PR_NUMBER/reviews?per_page=100" -Headers $headers
+          $approved = @($reviews) | Where-Object {
+            $_.state -eq 'APPROVED' -and $_.commit_id -eq $env:HEAD_SHA
+          }
+          if (-not $approved) {
+            throw "no APPROVED review for reviewed head $env:HEAD_SHA"
+          }
+          "Approved review commit: $env:HEAD_SHA" | Add-Content $env:GITHUB_STEP_SUMMARY
+
       - name: Locate exact review artifacts and dispatch protected publish
         shell: pwsh
         env:
@@ -25,6 +43,7 @@ jobs:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           PR_AUTHOR: ${{ github.event.pull_request.user.login }}
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          MERGE_SHA: ${{ github.event.pull_request.merge_commit_sha }}
         run: |
           $headers = @{ Authorization = "Bearer $env:GH_TOKEN"; Accept = 'application/vnd.github+json'; 'User-Agent' = 'WTCNUP-Auto-Publish' }
           $all = Invoke-RestMethod "https://api.github.com/repos/$env:REPO/actions/artifacts?per_page=100" -Headers $headers
@@ -48,11 +67,52 @@ jobs:
           if (-not $zip -or -not $manifestFile) { throw 'artifact content missing' }
           $manifest = Get-Content $manifestFile.FullName -Raw | ConvertFrom-Json
           if ($manifest.pull_request_head_sha -ne $env:HEAD_SHA) { throw 'review head mismatch' }
+          if ($manifest.pull_request_base_sha -ne $env:BASE_SHA) { throw 'review base mismatch' }
           if ($manifest.pull_request_number -ne [int]$env:PR_NUMBER) { throw 'review PR mismatch' }
+          $localZipSha = (Get-FileHash $zip.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($manifest.package_sha256 -ne $localZipSha) { throw 'review ZIP hash mismatch' }
+          if ([long]$manifest.package_size -ne [long]$zip.Length) { throw 'review ZIP size mismatch' }
           $unpack = Join-Path $tmp 'submission'
           Expand-Archive $zip.FullName -DestinationPath $unpack -Force
           $submission = Get-Content (Join-Path $unpack 'submission.json') -Raw | ConvertFrom-Json
           $uid = $manifest.submission_uid
+          if ($submission.submission_uid -ne $uid) { throw 'review submission uid mismatch' }
+
+          if ($env:MERGE_SHA -notmatch '^[0-9a-f]{40}$') { throw 'invalid merge commit SHA' }
+          $treeResp = Invoke-RestMethod "https://api.github.com/repos/$env:REPO/git/trees/$($env:MERGE_SHA)?recursive=1" -Headers $headers
+          $treeMap = @{}
+          foreach ($entry in @($treeResp.tree)) {
+            if ($entry.type -eq 'blob') { $treeMap[$entry.path] = $entry.sha }
+          }
+          $prefix = "submissions/$uid/"
+          $metaPath = $prefix + 'submission.json'
+          if (-not $treeMap.ContainsKey($metaPath)) { throw 'merged submission.json missing' }
+          function MergedBlob([string]$sha) {
+            $blob = Invoke-RestMethod "https://api.github.com/repos/$env:REPO/git/blobs/$sha" -Headers $headers
+            return [Convert]::FromBase64String(($blob.content -replace '\s',''))
+          }
+          $localMeta = Join-Path $unpack 'submission.json'
+          $mergedMeta = MergedBlob $treeMap[$metaPath]
+          $localMetaBytes = [IO.File]::ReadAllBytes($localMeta)
+          if ([Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($localMetaBytes)) -ne
+              [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($mergedMeta))) {
+            throw 'review submission.json differs from merged tree'
+          }
+          foreach ($file in @($submission.files)) {
+            $rel = [string]$file.path
+            if (-not $rel) { throw 'empty declared file path' }
+            $gitPath = $prefix + 'files/' + $rel
+            if (-not $treeMap.ContainsKey($gitPath)) { throw "merged file missing: $rel" }
+            $mergedBytes = MergedBlob $treeMap[$gitPath]
+            $localPath = Join-Path (Join-Path $unpack 'files') $rel
+            if (-not (Test-Path -LiteralPath $localPath -PathType Leaf)) { throw "review file missing: $rel" }
+            $localBytes = [IO.File]::ReadAllBytes($localPath)
+            if ($localBytes.Length -ne [long]$file.size) { throw "review file size mismatch: $rel" }
+            $localHash = [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($localBytes))
+            $mergedHash = [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($mergedBytes))
+            if ($localHash -ne $mergedHash) { throw "review file differs from merged tree: $rel" }
+          }
+          "Merge content bound: $env:MERGE_SHA ($($submission.files.Count) files)" | Add-Content $env:GITHUB_STEP_SUMMARY
           $tag = "community-$uid"
           $projectId = if ($submission.project_id) { [string]$submission.project_id } else { "wtcnup-$uid" }
           $body = @{
