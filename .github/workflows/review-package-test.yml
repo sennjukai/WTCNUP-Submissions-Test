@@ -1,0 +1,69 @@
+name: Review package test
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  review-package:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Build trusted test publisher
+        shell: pwsh
+        run: |
+          cmake -S publisher -B build -A x64
+          cmake --build build --config Release --target community-publisher
+
+      - name: Build review ZIP
+        id: package
+        shell: pwsh
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          $env:WTU_GIT_EXE = (Get-Command git).Source
+          $zip = Join-Path $env:RUNNER_TEMP 'submission.zip'
+          & build/Release/community-publisher.exe build-package `
+            --repo $env:GITHUB_WORKSPACE --base $env:BASE_SHA --head $env:HEAD_SHA `
+            --uid '550e8400-e29b-41d4-a716-446655440000' `
+            --author $env:PR_AUTHOR --pr $env:PR_NUMBER --out $zip
+          if ($LASTEXITCODE -ne 0) { throw "package failed" }
+          $sha = (Get-FileHash $zip -Algorithm SHA256).Hash.ToLowerInvariant()
+          "ZIP=$zip" >> $env:GITHUB_OUTPUT
+          "SHA=$sha" >> $env:GITHUB_OUTPUT
+          "SIZE=$((Get-Item $zip).Length)" >> $env:GITHUB_OUTPUT
+
+      - name: Upload exact review ZIP
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: review-package-${{ github.event.pull_request.head.sha }}-${{ github.run_id }}
+          path: ${{ steps.package.outputs.ZIP }}
+          retention-days: 7
+
+      - name: Summary
+        shell: pwsh
+        env:
+          SHA: ${{ steps.package.outputs.SHA }}
+          SIZE: ${{ steps.package.outputs.SIZE }}
+          ARTIFACT_ID: ${{ steps.upload.outputs.artifact-id }}
+        run: |
+          @"
+          ## Review package test
+          - ZIP SHA-256: `$env:SHA`
+          - ZIP size: `$env:SIZE`
+          - Artifact ID: `$env:ARTIFACT_ID`
+          - PR head: `${{ github.event.pull_request.head.sha }}`
+          This is an isolated workflow test branch; it is not the production publish path.
+          "@ | Add-Content $env:GITHUB_STEP_SUMMARY
