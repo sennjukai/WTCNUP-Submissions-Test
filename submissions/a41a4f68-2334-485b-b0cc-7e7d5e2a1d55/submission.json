@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "submission_uid": "a41a4f68-2334-485b-b0cc-7e7d5e2a1d55",
+  "author_name": "社区测试",
+  "github_user": "WTCNUPSubmissions",
+  "project_name": "社区测试",
+  "game_version": "1",
+  "translation_version": "1",
+  "channel": "stable",
+  "changelog": "社区测试文件",
+  "description": "社区测试专用",
+  "created_at": "2026-11-24T22:25:57Z",
+  "file_count": 2,
+  "total_size": 513024,
+  "files": [
+    {"path": "inf.csv", "size": 505494, "sha256": "e6822520198e1cc015c5daaf6ac50d8209e4e41a1cfe38527c2371815f121d7a"},
+    {"path": "localization.blk", "size": 7530, "sha256": "da5f700f6be76189748f66141a22927d355bb1cc04814674dc3cdd13b7b197e6"}
+  ]
+}
