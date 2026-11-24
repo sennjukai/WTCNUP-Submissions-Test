@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/wtcnup/submission-v2.schema.json",
+  "title": "WTCNUP submission v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "submission_uid",
+    "author_name",
+    "github_user",
+    "project_name",
+    "game_version",
+    "translation_version",
+    "channel",
+    "changelog",
+    "created_at",
+    "file_count",
+    "total_size",
+    "files"
+  ],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 2 },
+    "submission_uid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "author_name": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "github_user": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 39,
+      "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?$"
+    },
+    "project_id": {
+      "type": ["string", "null"],
+      "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+    },
+    "project_name": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "game_version": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "translation_version": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "channel": { "enum": ["stable", "beta"] },
+    "changelog": { "type": "string", "maxLength": 10000 },
+    "created_at": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]{1,6})?Z$"
+    },
+    "file_count": { "type": "integer", "minimum": 1, "maximum": 300 },
+    "total_size": { "type": "integer", "minimum": 0, "maximum": 52428800 },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 300,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "size", "sha256"],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240,
+            "pattern": "^(?:[^/]+/)*[^/.]+\\.(?:csv|blk)$"
+          },
+          "size": { "type": "integer", "minimum": 0, "maximum": 10485760 },
+          "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+        }
+      }
+    }
+  }
+}

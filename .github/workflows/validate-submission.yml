@@ -1,9 +1,11 @@
-name: Validate community submission
+name: Trusted submission validation (v2)
 
+# This workflow must exist on protected main. It executes trusted base code
+# only and reads PR objects by exact SHA; never checkout or execute PR files.
 on:
-  pull_request:
-    paths:
-      - "submissions/**"
+  pull_request_target:
+    branches: [main]
+    types: [opened, reopened, synchronize, edited, ready_for_review]
 
 permissions:
   contents: read
@@ -13,29 +15,42 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: Checkout PR data
-        uses: actions/checkout@v4
+      - name: Check out trusted base code only
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event.pull_request.base.sha }}
           persist-credentials: false
+          path: trusted
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Validate files and build ZIP
+      - name: Fetch PR objects without checkout or execution
+        shell: bash
         env:
-          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-        run: python scripts/validate_submission.py
+          REPO: ${{ github.repository }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          HEAD_BRANCH: ${{ github.event.pull_request.head.ref }}
+        run: |
+          set -euo pipefail
+          [[ "$BASE_SHA" =~ ^[0-9a-f]{40}$ && "$HEAD_SHA" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$PR_NUMBER" =~ ^[0-9]+$ && "$REPO" =~ ^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$ ]]
+          [[ "$HEAD_BRANCH" =~ ^wtcnup/submission-[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$ ]]
+          export GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null GIT_TERMINAL_PROMPT=0
+          data="$RUNNER_TEMP/wtcnup-pr-objects.git"
+          git init --bare "$data"
+          # Public repository, no token in URL or Git config. Both refs must match
+          # the immutable event SHAs; a moving PR fails closed.
+          git -C "$data" fetch --no-tags --depth=1 "https://github.com/${REPO}.git" \
+            "+${BASE_SHA}:refs/wtcnup/base" "+refs/pull/${PR_NUMBER}/head:refs/wtcnup/head"
+          [[ "$(git -C "$data" rev-parse refs/wtcnup/base)" == "$BASE_SHA" ]]
+          [[ "$(git -C "$data" rev-parse refs/wtcnup/head)" == "$HEAD_SHA" ]]
+          python3 trusted/tools/pipeline.py \
+            --repo "$data" --base "$BASE_SHA" --head "$HEAD_SHA" \
+            --author "$PR_AUTHOR" --branch "$HEAD_BRANCH" \
+            --zip "$RUNNER_TEMP/submission.zip"
+          sha256sum "$RUNNER_TEMP/submission.zip"
 
-      - name: Upload package artifact
-        if: success()
-        uses: actions/upload-artifact@v4
-        with:
-          name: submission-package
-          path: out/
-          if-no-files-found: error
-
-      # Phase 0: no release, no secrets, no publish token.
+# No secrets, write permissions, PR checkout, artifact upload or release.
+# Status is meaningful only when repository protection requires this trusted
+# workflow's check for the currently reviewed head; configure and verify separately.
