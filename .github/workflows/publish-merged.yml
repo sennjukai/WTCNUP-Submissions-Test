@@ -93,7 +93,7 @@ jobs:
           }
           function BytesSha([byte[]]$bytes) {
             $sha = [Security.Cryptography.SHA256]::Create()
-            try { return [Convert]::ToHexString($sha.ComputeHash($bytes)).ToLowerInvariant() }
+            try { return ([BitConverter]::ToString($sha.ComputeHash($bytes))).Replace('-','').ToLowerInvariant() }
             finally { $sha.Dispose() }
           }
           $localMeta = Join-Path $unpack 'submission.json'
