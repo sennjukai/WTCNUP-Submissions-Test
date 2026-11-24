@@ -91,11 +91,15 @@ jobs:
             $blob = Invoke-RestMethod "https://api.github.com/repos/$env:REPO/git/blobs/$sha" -Headers $headers
             return [Convert]::FromBase64String(($blob.content -replace '\s',''))
           }
+          function BytesSha([byte[]]$bytes) {
+            $sha = [Security.Cryptography.SHA256]::Create()
+            try { return [Convert]::ToHexString($sha.ComputeHash($bytes)).ToLowerInvariant() }
+            finally { $sha.Dispose() }
+          }
           $localMeta = Join-Path $unpack 'submission.json'
           $mergedMeta = MergedBlob $treeMap[$metaPath]
           $localMetaBytes = [IO.File]::ReadAllBytes($localMeta)
-          if ([Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($localMetaBytes)) -ne
-              [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($mergedMeta))) {
+          if ((BytesSha $localMetaBytes) -ne (BytesSha $mergedMeta)) {
             throw 'review submission.json differs from merged tree'
           }
           foreach ($file in @($submission.files)) {
@@ -108,8 +112,8 @@ jobs:
             if (-not (Test-Path -LiteralPath $localPath -PathType Leaf)) { throw "review file missing: $rel" }
             $localBytes = [IO.File]::ReadAllBytes($localPath)
             if ($localBytes.Length -ne [long]$file.size) { throw "review file size mismatch: $rel" }
-            $localHash = [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($localBytes))
-            $mergedHash = [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($mergedBytes))
+            $localHash = BytesSha $localBytes
+            $mergedHash = BytesSha $mergedBytes
             if ($localHash -ne $mergedHash) { throw "review file differs from merged tree: $rel" }
           }
           "Merge content bound: $env:MERGE_SHA ($($submission.files.Count) files)" | Add-Content $env:GITHUB_STEP_SUMMARY
