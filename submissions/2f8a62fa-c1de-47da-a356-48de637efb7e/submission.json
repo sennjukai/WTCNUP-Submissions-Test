@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "submission_uid": "2f8a62fa-c1de-47da-a356-48de637efb7e",
+  "author_name": "C++ Submit Test",
+  "github_user": "WTCNUPSubmissions",
+  "project_id": "test-cpp-v2",
+  "project_name": "C++ Submit Test Synced",
+  "game_version": "2.61.0.15",
+  "translation_version": "2.61.0.15_test2",
+  "channel": "stable",
+  "changelog": "Real C++ v2 submission test after fork sync fix",
+  "created_at": "2026-11-24T11:00:30Z",
+  "file_count": 2,
+  "total_size": 50,
+  "files": [
+    {"path": "lang/chinese.csv", "size": 35, "sha256": "3c33a19a3f124303a07857018e0cd22850aeae79b9f8387dd623584a3d9deb35"},
+    {"path": "lang/config.blk", "size": 15, "sha256": "8790b3b779b825ebfb32854dcd61833f66f81a28caa2b6a93ad1b4981b076876"}
+  ]
+}
